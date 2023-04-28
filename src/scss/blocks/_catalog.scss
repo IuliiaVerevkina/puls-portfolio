@@ -1,0 +1,125 @@
+@import "../base/variables";
+.catalog {
+      .title {
+            font-weight: 400;
+      }
+      &__tabs {
+            margin-top: 70px;
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0;
+            padding-left: 0;
+            li {
+                  background: rgba(0, 0, 0, 0.0001);
+                  border: 2px solid #d0d0d0;
+                  padding: 10px 0;
+                  color: #6b6b6b;
+                  text-transform: uppercase;
+                  font-weight: 400;
+                  font-size: 18px;
+                  transform: skewX(-30deg);
+                  width: 223px;
+                  text-align: center;
+                  cursor: pointer;
+                  transition: 0.5s all;
+                  &:hover {
+                        box-shadow: 3px 3px 20px $main-color;
+                        border: 2px solid transparent;
+                  }
+                  div {
+                        transform: skewX(30deg);
+                  }
+            }
+            .active {
+                  color: $white-text-color;
+                  background: $main-color;
+                  border: 2px solid transparent;
+            }
+      }
+      &__content {
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0px, 1fr));
+            gap: 1rem;
+            .catalog-item {
+                  display: none;
+                  border: 2px solid #d0d0d0;
+                  padding: 20px 27px;
+                  &__wrapper {
+                        height: 342px;
+                        overflow-y: auto;
+                  }
+                  &__content {
+                        img {
+                              display: block;
+                              margin: 0 auto;
+                              height: 200px;
+                              max-width: 100%;
+                        }
+                  }
+                  &__descr {
+                        text-align: center;
+                        text-decoration-line: underline;
+                        color: $main-color;
+                        margin-top: 10px;
+                        cursor: pointer;
+                  }
+                  &__list {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        ul {
+                              list-style-type: none;
+
+                              li {
+                                    color: #555555;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    margin-bottom: 10px;
+                                    position: relative;
+                                    &::before {
+                                          content: "";
+                                          width: 8px;
+                                          height: 8px;
+                                          position: absolute;
+                                          background-color: $main-color;
+                                          left: -30px;
+                                          top: 8px;
+                                    }
+                              }
+                        }
+                  }
+                  &__price {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-top: 2px solid #e8e8e8;
+                        margin-top: 17px;
+                        padding-top: 17px;
+                        .price {
+                              font-weight: 700;
+                              font-size: 20px;
+                              line-height: 20px;
+                              &-disc {
+                                    display: block;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    text-decoration-line: line-through;
+                                    color: #555555;
+                              }
+                        }
+                  }
+                  &__hidden {
+                        display: none;
+                  }
+            }
+            .active-item {
+                  display: block;
+            }
+      }
+}

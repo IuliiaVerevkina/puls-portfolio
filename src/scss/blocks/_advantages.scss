@@ -1,0 +1,24 @@
+@import "../base/variables";
+.advantages {
+      padding: 70px 0 83px 0;
+      &__wrapper {
+		margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+      }
+	&__item {
+		max-width: 269px;
+		img {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 25px;
+		}
+		.text {
+			span {
+				color: $main-color;
+				text-decoration: underline;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+@import "../base/variables";
+.button {
+      background: $main-color;
+      color: $white-text-color;
+      border-radius: 5px;
+      border: none;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 7px 20px;
+      &_main {
+            font-size: 16px;
+		margin-top: 67px;
+		min-width: 300px;
+      }
+	&_submit {
+		height: 58px;
+		font-size: 16px;
+	}
+      &:hover {
+            background-color: #ff0000;
+      }
+}

@@ -1,0 +1,269 @@
+@media screen and (max-width: 1200px) {
+      .header {
+            justify-content: space-around;
+      }
+
+      .promo {
+            &__header {
+                  font-size: 30px;
+            }
+            &__wrapper {
+                  align-items: center;
+            }
+      }
+      .consultation {
+            padding: 50px 20px 58px 15px;
+      }
+      .catalog {
+            padding: 0 15px;
+      }
+}
+
+@media screen and (max-width: 992px) {
+      .title_left {
+            font-size: 28px;
+      }
+      .advantages {
+            &__wrapper {
+                  justify-content: space-around;
+                  flex-wrap: wrap;
+            }
+      }
+      .next,
+      .prev {
+            display: none;
+      }
+      .reviews {
+            padding: 0 10px;
+      }
+}
+
+@media screen and (max-width: 768px) {
+      .title {
+            font-size: 25px;
+      }
+      .header {
+            &__logo {
+                  max-width: 200px;
+            }
+            &__official {
+                  span {
+                        font-size: 14px;
+                  }
+            }
+            &__phone {
+                  font-size: 14px;
+            }
+      }
+      .promo {
+            &__header {
+                  font-size: 23px;
+            }
+            &__subheader {
+                  font-size: 18px;
+            }
+      }
+
+      .advantages {
+            &__item:last-child {
+                  margin-top: 30px;
+            }
+      }
+
+      .carousel {
+            padding: 30px 10px;
+            &__inner {
+                  img {
+                        width: 100%;
+                  }
+            }
+      }
+
+      .catalog {
+            margin-top: 40px;
+            &__tabs {
+                  margin-top: 30px;
+                  li {
+                        font-size: 14px;
+                        width: 150px;
+                  }
+            }
+            &__content {
+                  margin-top: 50px;
+                  grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+      }
+      .reviews {
+            &__carousel-wrap {
+                  .wrapper__descr {
+                        flex-direction: column;
+                        gap: 15px;
+                        .reviews__inner {
+                              max-width: 100%;
+                              text-align: center;
+                              &-user {
+                                    font-size: 14px;
+                              }
+                              &-subtext {
+                                    font-size: 8px;
+                              }
+                              &-text {
+                                    font-size: 12px;
+                              }
+                        }
+                  }
+            }
+      }
+      .footer {
+            &__info {
+                  width: 260px;
+                  height: 170px;
+                  address {
+                        font-size: 16px;
+                  }
+                  &-phone {
+                        font-size: 16px;
+                  }
+                  &-social {
+                        gap: 20px;
+                        .icon {
+                              width: 40px;
+                              height: 40px;
+                              img {
+                                    height: 17px;
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+@media screen and (max-width: 576px) {
+      .sm-hidden {
+            display: none;
+      }
+      .title {
+            font-size: 16px;
+            &_left {
+                  font-size: 16px;
+            }
+      }
+      .subtitle {
+            font-size: 12px;
+      }
+      .text {
+            font-size: 10px;
+      }
+      .feed-form {
+            max-width: 100%;
+      }
+
+      .header {
+            justify-content: space-between;
+            &__logo {
+                  max-width: 150px;
+            }
+            &__phone {
+                  font-size: 10px;
+            }
+            .button {
+                  padding: 4px 7px;
+                  font-size: 10px;
+            }
+      }
+
+      .promo {
+            padding: 21px 15px 50px 15px;
+            background-position-x: left;
+            &__wrapper {
+                  margin-top: 30px;
+            }
+            &__header {
+                  font-size: 18px;
+                  line-height: normal;
+                  text-align: center;
+            }
+            &__subheader {
+                  font-size: 14px;
+                  text-align: center;
+            }
+            &__icons {
+                  margin-top: 25px;
+                  width: 300px;
+            }
+            &__icon {
+                  font-size: 10px;
+                  img {
+                        height: 30px;
+                        margin-bottom: 10px;
+                  }
+            }
+            &__link {
+                  font-size: 12px;
+                  a {
+                        font-size: 12px;
+                  }
+            }
+            .button_main {
+                  margin-top: 25px;
+                  min-width: auto;
+                  font-size: 14px;
+            }
+      }
+
+      .advantages {
+            padding: 20px 0 50px 0;
+            &__wrapper {
+                  margin-top: 25px;
+            }
+            &__item {
+                  &:last-child {
+                        margin-top: 0;
+                  }
+                  img {
+                        height: 60px;
+                  }
+            }
+      }
+      .consultation {
+            padding: 20px 15px 20px 15px;
+            &__descr {
+                  font-size: 12px;
+            }
+      }
+      .catalog {
+            margin-top: 30px;
+            &__tabs {
+                  margin-top: 20px;
+                  gap: 5px;
+                  li {
+                        font-size: 8px;
+                        width: 100px;
+                        padding: 7px 0;
+                  }
+            }
+            &__content {
+                  margin-top: 30px;
+                  grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+      }
+      .overlay {
+            .modal {
+                  width: 100%;
+                  padding: 15px;
+                  &__close {
+                        top: 7px;
+                        right: 0px;
+                  }
+                  &__subtitle {
+                        font-size: 14px;
+                  }
+                  &__descr {
+                        font-size: 12px;
+                  }
+            }
+      }
+	.pageup {
+		right: 10px;
+	}
+}

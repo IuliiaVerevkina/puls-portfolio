@@ -1,0 +1,39 @@
+@import "libs/bootstrap-reboot.min";
+
+@import "base/variables";
+@import "blocks/buttons";
+@import "blocks/text";
+
+@import "blocks/headers";
+@import "blocks/promo";
+@import "blocks/advantages";
+@import "blocks/consultation";
+@import "blocks/forms";
+@import "blocks/carousel";
+@import "blocks/catalog";
+@import "blocks/reviews";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/pageup";
+
+@import "base/medias";
+@import "base/animation";
+
+* {
+      font-family: "Montserrat", sans-serif;
+      box-sizing: border-box;
+}
+
+.container {
+      position: relative;
+      max-width: 1140px;
+      margin: 0 auto;
+}
+
+.footer {
+      iframe {
+		width: 100%;
+		height: 430px;
+		border: 0;
+      }
+}

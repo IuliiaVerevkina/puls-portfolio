@@ -1,0 +1,37 @@
+.reviews {
+      &__carousel-wrap {
+            margin-top: 60px;
+            .wrapper__descr {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 61px;
+                  img {
+                        margin: 0;
+                        height: 170px;
+                        width: 170px;
+                        border-radius: 100%;
+                  }
+                  .reviews__inner {
+                        max-width: 600px;
+                        &-user {
+                              font-weight: 700;
+                              font-size: 18px;
+                        }
+                        &-subtext {
+                              font-weight: 500;
+                              font-size: 14px;
+                              color: #646464;
+                        }
+                        &-text {
+                              font-weight: 300;
+                              font-size: 16px;
+                        }
+                  }
+            }
+      }
+      .reviews-next,
+      .reviews-prev {
+            transform: translateY(0px);
+      }
+}

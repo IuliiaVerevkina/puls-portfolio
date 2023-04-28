@@ -1,0 +1,10 @@
+@import "../base/variables";
+.consultation {
+      background: url("../img/bg2.png") center (center/cover) no-repeat;
+      padding: 100px 0 108px 0;
+      &__descr {
+            color: $white-text-color;
+            font-weight: 500;
+            font-size: 20px;
+      }
+}

@@ -1,0 +1,52 @@
+@import "../base/variables";
+.footer {
+      margin-top: 48px;
+      height: 430px;
+      position: relative;
+      &__info {
+            position: absolute;
+            width: 460px;
+            height: 270px;
+            background: $main-color;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: $white-text-color;
+            address {
+                  font-weight: 500;
+                  font-size: 20px;
+			margin-bottom: 0;
+            }
+            &-phone {
+                  color: $white-text-color;
+                  font-weight: 700;
+                  font-size: 20px;
+                  text-decoration: none;
+            }
+            &-social {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 27px;
+                  .icon {
+                        border: 2px solid $white-text-color;
+                        border-radius: 100%;
+                        width: 53px;
+                        height: 52px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover {
+                              background-color: #ff0000;
+                        }
+                        img {
+                              height: 24px;
+                        }
+                  }
+            }
+      }
+}
