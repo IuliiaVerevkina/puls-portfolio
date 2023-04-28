@@ -1,6 +1,6 @@
 # Portfolio web-site RunSmart
 
-[DEMO](https://puls-portgolio-iuliiaverevkina.vercel.app/)
+[DEMO](https://puls-portgolio.vercel.app/)
 
 For development as the main tools I used:
 * HTML
